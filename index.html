@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moe Kyaw Aung | Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.css"></script>
+</head>
+<body>
+
+<!-- ===== Hero Section ===== -->
+<section id="hero">
+  <canvas id="hero-3d"></canvas>
+  <div class="hero-content">
+    <h1>Hi, I'm Moe Kyaw Aung</h1>
+    <p>Flutter Web | Kotlin | 3D Animations | Frontend Development</p>
+    <div class="hero-buttons">
+      <a href="assets/resume/MoeKyawAung_Resume.pdf" class="btn" download>Download Resume</a>
+      <a href="#portfolio" class="btn">View Portfolio</a>
+    </div>
+    <div class="hero-avatars">
+      <img src="https://www.gravatar.com/avatar/moekyawaung2026?s=100" alt="Avatar 1">
+      <img src="https://www.gravatar.com/avatar/moekyawaung13721?s=100" alt="Avatar 2">
+    </div>
+  </div>
+</section>
+
+<!-- ===== About & Skills Section ===== -->
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <p>Professional mobile & web developer creating Flutter Web apps, Kotlin backends, and immersive 3D experiences.</p>
+  <div class="skills-charts">
+    <canvas id="flutterChart"></canvas>
+    <canvas id="kotlinChart"></canvas>
+    <canvas id="htmlChart"></canvas>
+    <canvas id="threeChart"></canvas>
+  </div>
+</section>
+
+<!-- ===== Portfolio Section ===== -->
+<section id="portfolio" data-aos="fade-up">
+  <h2>My Projects</h2>
+  <div class="filters">
+    <button data-filter="all" class="active">All</button>
+    <button data-filter="flutter">Flutter</button>
+    <button data-filter="kotlin">Kotlin</button>
+    <button data-filter="web">Web</button>
+  </div>
+  <div class="project-grid">
+    <div class="project-card" data-category="flutter">
+      <img src="assets/images/flutter-demo.png" alt="Flutter Project">
+      <h3>Flutter Web App</h3>
+      <p>Interactive web app built with Flutter Web.</p>
+      <a href="https://github.com/Dev-moe-kyawaung/flutter-web-demo" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card" data-category="kotlin">
+      <img src="assets/images/kotlin-demo.png" alt="Kotlin Project">
+      <h3>Ktor Backend API</h3>
+      <p>RESTful API using Kotlin + Ktor.</p>
+      <a href="https://github.com/Dev-moe-kyawaung/kotlin-ktor-demo" target="_blank">GitHub</a>
+    </div>
+    <div class="project-card" data-category="web">
+      <img src="assets/images/html-demo.png" alt="Web Project">
+      <h3>HTML/CSS 3D Animation</h3>
+      <p>Creative web animation with Three.js.</p>
+      <a href="https://github.com/Dev-moe-kyawaung/html-3d-demo" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact Section ===== -->
+<section id="contact" data-aos="fade-up">
+  <h2>Contact Me</h2>
+  <form id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <div class="social-links">
+    <a href="https://github.com/Dev-moe-kyawaung" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    <a href="https://gravatar.com/moekyawaung2026" target="_blank">Gravatar</a>
+  </div>
+</section>
+
+<script src="js/three-hero.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration:1200});</script>
+</body>
+</html>
