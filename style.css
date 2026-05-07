@@ -1,0 +1,41 @@
+/* Basic Reset */
+* {margin:0;padding:0;box-sizing:border-box;}
+body {font-family: 'Poppins', sans-serif; background:#0e0e0e; color:#fff; line-height:1.6;}
+section {padding:80px 50px; text-align:center;}
+
+/* Hero */
+#hero {position:relative; height:100vh; display:flex; justify-content:center; align-items:center; overflow:hidden;}
+#hero-3d {position:absolute; width:100%; height:100%;}
+.hero-content {position:absolute; z-index:2;}
+.hero-buttons {margin-top:20px;}
+.btn {padding:12px 25px; margin:0 10px; background:#ff4c60; border-radius:50px; color:#fff; text-decoration:none; transition:0.3s;}
+.btn:hover {background:#ff2c3a;}
+.hero-avatars img {width:80px; height:80px; border-radius:50%; margin:0 10px; border:2px solid #ff4c60;}
+
+/* Skills Charts */
+.skills-charts {display:flex; justify-content:center; flex-wrap:wrap; gap:30px; margin-top:50px;}
+.skills-charts canvas {width:150px !important; height:150px !important;}
+
+/* Portfolio */
+.filters {margin-bottom:30px;}
+.filters button {padding:10px 20px; margin:5px; border:none; border-radius:30px; cursor:pointer; background:#333; color:#fff;}
+.filters button.active, .filters button:hover {background:#ff4c60;}
+.project-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:30px;}
+.project-card {background:#1a1a1a; padding:20px; border-radius:10px; transition:0.3s;}
+.project-card:hover {transform:translateY(-10px);}
+.project-card img {width:100%; border-radius:10px; margin-bottom:15px;}
+
+/* Contact Form */
+form {max-width:500px;margin:0 auto; display:flex; flex-direction:column; gap:15px;}
+input, textarea {padding:10px; border-radius:5px; border:none;}
+button {padding:12px; background:#ff4c60; border:none; border-radius:50px; color:#fff; cursor:pointer;}
+button:hover {background:#ff2c3a;}
+
+/* Social Links */
+.social-links {margin-top:20px;}
+.social-links a {margin:0 10px; color:#ff4c60; text-decoration:none;}
+.social-links a:hover {text-decoration:underline;}
+
+/* Dark/Light Mode */
+body.light-mode {background:#fff; color:#000;}
+body.light-mode .btn {background:#ff4c60; color:#fff;}
